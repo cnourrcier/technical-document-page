@@ -1,0 +1,112 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+        /*smooths the transition when clicking a link that scrolls to a different section of the page.*/
+    }
+}
+
+* {
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgb(75, 73, 73);
+}
+
+#navbar {
+    border-right: 2px solid grey;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 300px;
+    padding: 30px 30px;
+}
+
+.main-content {
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    margin-left: 20px;
+}
+
+.main-content ul {
+    margin-top: -10px;
+}
+
+.main-content li {
+    margin-left: 30px;
+    padding: 5px 0;
+}
+
+#main-doc .inner-li {
+    list-style-type: circle;
+}
+
+#navbar>ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+}
+
+#navbar>li {
+    list-style: none;
+    display: block;
+    padding: 0.6rem;
+    border-bottom: 1px solid black;
+    text-indent: 7%;
+
+}
+
+#navbar>li:first-of-type {
+    border-top: 1px solid black;
+}
+
+#navbar>li:last-of-type {
+    border-bottom: none;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+header {
+    font-size: 1.9rem !important;
+    color: black !important;
+}
+
+#navbar header {
+    text-align: center;
+    padding: 20px 30px;
+}
+
+#main-doc header {
+    padding: 0;
+    margin: 5px 0;
+}
+
+#navbar a {
+    cursor: pointer;
+}
+
+.code-example {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 95%;
+    border: 1px solid rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    margin: 0 30px;
+}
+
+.code-example p {
+    font-family: monospace, sans-serif;
+    font-size: 12px;
+}
